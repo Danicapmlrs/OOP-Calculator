@@ -101,5 +101,10 @@ namespace OOP_Calculator
         {
 
         }
+
+        private void Equals_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
