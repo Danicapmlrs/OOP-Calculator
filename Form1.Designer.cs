@@ -70,7 +70,7 @@ namespace OOP_Calculator
             this.Button_7.TabIndex = 7;
             this.Button_7.Text = "7";
             this.Button_7.UseVisualStyleBackColor = false;
-            this.Button_7.Click += new System.EventHandler(this.button1_Click);
+            this.Button_7.Click += new System.EventHandler(this.button_7_Click);
             // 
             // Button_9
             // 
@@ -82,7 +82,7 @@ namespace OOP_Calculator
             this.Button_9.TabIndex = 9;
             this.Button_9.Text = "9";
             this.Button_9.UseVisualStyleBackColor = false;
-            this.Button_9.Click += new System.EventHandler(this.button2_Click);
+            this.Button_9.Click += new System.EventHandler(this.button_9_Click);
             // 
             // Button_8
             // 
@@ -94,7 +94,7 @@ namespace OOP_Calculator
             this.Button_8.TabIndex = 8;
             this.Button_8.Text = "8";
             this.Button_8.UseVisualStyleBackColor = false;
-            this.Button_8.Click += new System.EventHandler(this.button3_Click);
+            this.Button_8.Click += new System.EventHandler(this.button_8_Click);
             // 
             // Button_5
             // 
@@ -106,7 +106,7 @@ namespace OOP_Calculator
             this.Button_5.TabIndex = 5;
             this.Button_5.Text = "5";
             this.Button_5.UseVisualStyleBackColor = false;
-            this.Button_5.Click += new System.EventHandler(this.button4_Click);
+            this.Button_5.Click += new System.EventHandler(this.button_5_Click);
             // 
             // Button_6
             // 
@@ -118,7 +118,7 @@ namespace OOP_Calculator
             this.Button_6.TabIndex = 6;
             this.Button_6.Text = "6";
             this.Button_6.UseVisualStyleBackColor = false;
-            this.Button_6.Click += new System.EventHandler(this.button5_Click);
+            this.Button_6.Click += new System.EventHandler(this.button_6_Click);
             // 
             // Button_4
             // 
@@ -130,7 +130,7 @@ namespace OOP_Calculator
             this.Button_4.TabIndex = 4;
             this.Button_4.Text = "4";
             this.Button_4.UseVisualStyleBackColor = false;
-            this.Button_4.Click += new System.EventHandler(this.button6_Click);
+            this.Button_4.Click += new System.EventHandler(this.button_4_Click);
             // 
             // Button_2
             // 
@@ -142,7 +142,7 @@ namespace OOP_Calculator
             this.Button_2.TabIndex = 2;
             this.Button_2.Text = "2";
             this.Button_2.UseVisualStyleBackColor = false;
-            this.Button_2.Click += new System.EventHandler(this.button7_Click);
+            this.Button_2.Click += new System.EventHandler(this.button_2_Click);
             // 
             // Button_3
             // 
@@ -154,7 +154,7 @@ namespace OOP_Calculator
             this.Button_3.TabIndex = 3;
             this.Button_3.Text = "3";
             this.Button_3.UseVisualStyleBackColor = false;
-            this.Button_3.Click += new System.EventHandler(this.button8_Click);
+            this.Button_3.Click += new System.EventHandler(this.button_3_Click);
             // 
             // Button_1
             // 
@@ -166,7 +166,7 @@ namespace OOP_Calculator
             this.Button_1.TabIndex = 1;
             this.Button_1.Text = "1";
             this.Button_1.UseVisualStyleBackColor = false;
-            this.Button_1.Click += new System.EventHandler(this.button9_Click);
+            this.Button_1.Click += new System.EventHandler(this.button_1_Click);
             // 
             // Btn_Add
             // 
@@ -178,7 +178,7 @@ namespace OOP_Calculator
             this.Btn_Add.TabIndex = 14;
             this.Btn_Add.Text = "+";
             this.Btn_Add.UseVisualStyleBackColor = false;
-            this.Btn_Add.Click += new System.EventHandler(this.button10_Click);
+            this.Btn_Add.Click += new System.EventHandler(this.Btn_Add_Click);
             // 
             // Btn_Minus
             // 
@@ -190,7 +190,7 @@ namespace OOP_Calculator
             this.Btn_Minus.TabIndex = 13;
             this.Btn_Minus.Text = "-";
             this.Btn_Minus.UseVisualStyleBackColor = false;
-            this.Btn_Minus.Click += new System.EventHandler(this.button11_Click);
+            this.Btn_Minus.Click += new System.EventHandler(this.Btn_Minus_Click);
             // 
             // Btn_Multiply
             // 
@@ -202,7 +202,7 @@ namespace OOP_Calculator
             this.Btn_Multiply.TabIndex = 12;
             this.Btn_Multiply.Text = "x";
             this.Btn_Multiply.UseVisualStyleBackColor = false;
-            this.Btn_Multiply.Click += new System.EventHandler(this.button12_Click);
+            this.Btn_Multiply.Click += new System.EventHandler(this.Btn_Multiply_Click);
             // 
             // Btn_Divide
             // 
@@ -214,7 +214,7 @@ namespace OOP_Calculator
             this.Btn_Divide.TabIndex = 11;
             this.Btn_Divide.Text = "/";
             this.Btn_Divide.UseVisualStyleBackColor = false;
-            this.Btn_Divide.Click += new System.EventHandler(this.button13_Click);
+            this.Btn_Divide.Click += new System.EventHandler(this.Btn_Divide_Click);
             // 
             // Btn_Clear
             // 
@@ -226,7 +226,7 @@ namespace OOP_Calculator
             this.Btn_Clear.TabIndex = 15;
             this.Btn_Clear.Text = "C";
             this.Btn_Clear.UseVisualStyleBackColor = false;
-            this.Btn_Clear.Click += new System.EventHandler(this.button14_Click);
+            this.Btn_Clear.Click += new System.EventHandler(this.Btn_Clear_Click);
             // 
             // Btn_Percentage
             // 
@@ -238,7 +238,7 @@ namespace OOP_Calculator
             this.Btn_Percentage.TabIndex = 16;
             this.Btn_Percentage.Text = "%";
             this.Btn_Percentage.UseVisualStyleBackColor = false;
-            this.Btn_Percentage.Click += new System.EventHandler(this.button15_Click);
+            this.Btn_Percentage.Click += new System.EventHandler(this.Btn_Percentage_Click);
             // 
             // Btn_Decimal
             // 
@@ -274,7 +274,7 @@ namespace OOP_Calculator
             this.Button_0.TabIndex = 0;
             this.Button_0.Text = "0";
             this.Button_0.UseVisualStyleBackColor = false;
-            this.Button_0.Click += new System.EventHandler(this.button18_Click);
+            this.Button_0.Click += new System.EventHandler(this.button_0_Click);
             // 
             // Form1
             // 
