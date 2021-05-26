@@ -29,7 +29,6 @@ namespace OOP_Calculator
         /// </summary>
         private void InitializeComponent()
         {
-            this.OutputBox = new System.Windows.Forms.RichTextBox();
             this.Button_7 = new System.Windows.Forms.Button();
             this.Button_9 = new System.Windows.Forms.Button();
             this.Button_8 = new System.Windows.Forms.Button();
@@ -48,17 +47,8 @@ namespace OOP_Calculator
             this.Btn_Decimal = new System.Windows.Forms.Button();
             this.Btn_Equals = new System.Windows.Forms.Button();
             this.Button_0 = new System.Windows.Forms.Button();
+            this.TextB1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // OutputBox
-            // 
-            this.OutputBox.Font = new System.Drawing.Font("Segoe UI", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.OutputBox.Location = new System.Drawing.Point(12, 28);
-            this.OutputBox.Name = "OutputBox";
-            this.OutputBox.Size = new System.Drawing.Size(385, 91);
-            this.OutputBox.TabIndex = 0;
-            this.OutputBox.Text = "";
-            this.OutputBox.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // Button_7
             // 
@@ -276,12 +266,21 @@ namespace OOP_Calculator
             this.Button_0.UseVisualStyleBackColor = false;
             this.Button_0.Click += new System.EventHandler(this.button_0_Click);
             // 
+            // TextB1
+            // 
+            this.TextB1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextB1.Location = new System.Drawing.Point(22, 43);
+            this.TextB1.Name = "TextB1";
+            this.TextB1.Size = new System.Drawing.Size(369, 87);
+            this.TextB1.TabIndex = 18;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(410, 450);
+            this.Controls.Add(this.TextB1);
             this.Controls.Add(this.Button_0);
             this.Controls.Add(this.Btn_Equals);
             this.Controls.Add(this.Btn_Decimal);
@@ -300,17 +299,15 @@ namespace OOP_Calculator
             this.Controls.Add(this.Button_8);
             this.Controls.Add(this.Button_9);
             this.Controls.Add(this.Button_7);
-            this.Controls.Add(this.OutputBox);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Calculator";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.RichTextBox OutputBox;
         private System.Windows.Forms.Button Button_7;
         private System.Windows.Forms.Button Button_9;
         private System.Windows.Forms.Button Button_8;
@@ -329,6 +326,7 @@ namespace OOP_Calculator
         private System.Windows.Forms.Button Btn_Decimal;
         private System.Windows.Forms.Button Btn_Equals;
         private System.Windows.Forms.Button Button_0;
+        private System.Windows.Forms.TextBox TextB1;
     }
 }
 
