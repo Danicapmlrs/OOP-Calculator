@@ -240,6 +240,7 @@ namespace OOP_Calculator
             this.Btn_Decimal.TabIndex = 10;
             this.Btn_Decimal.Text = ".";
             this.Btn_Decimal.UseVisualStyleBackColor = false;
+            this.Btn_Decimal.Click += new System.EventHandler(this.Btn_Decimal_Click);
             // 
             // Btn_Equals
             // 
@@ -271,8 +272,10 @@ namespace OOP_Calculator
             this.TextB1.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.TextB1.Location = new System.Drawing.Point(22, 43);
             this.TextB1.Name = "TextB1";
+            this.TextB1.PlaceholderText = "0";
             this.TextB1.Size = new System.Drawing.Size(369, 87);
             this.TextB1.TabIndex = 18;
+            this.TextB1.TextChanged += new System.EventHandler(this.TextB1_TextChanged);
             // 
             // Form1
             // 

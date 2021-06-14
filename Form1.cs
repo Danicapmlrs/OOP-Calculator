@@ -17,6 +17,10 @@ namespace OOP_Calculator
             InitializeComponent();
         }
 
+        public float Number = 0;
+
+        public string Operands;
+
         private void Chain_Text(string calc_text)
         {
             if (TextB1.Text == "")
@@ -81,17 +85,21 @@ namespace OOP_Calculator
 
         private void Btn_Add_Click(object sender, EventArgs e)
         {
-            Chain_Text("+");
+            Number = float.Parse(TextB1.Text);
+            TextB1.Text="";
+            Operands = "+";
         }
 
         private void Btn_Clear_Click(object sender, EventArgs e)
         {
-            TextB1.Text = "";
+            TextB1.Text = "0";
         }
 
         private void Btn_Minus_Click(object sender, EventArgs e)
         {
-            Chain_Text("-");
+            Number = float.Parse(TextB1.Text);
+            TextB1.Text = "";
+            Operands = "-";
         }
 
         private void Btn_Percentage_Click(object sender, EventArgs e)
@@ -101,15 +109,29 @@ namespace OOP_Calculator
 
         private void Btn_Multiply_Click(object sender, EventArgs e)
         {
-            Chain_Text("*");
+            Number = float.Parse(TextB1.Text);
+            TextB1.Text = "";
+            Operands = "*";
         }
 
         private void Btn_Divide_Click(object sender, EventArgs e)
         {
-            Chain_Text("/");
+            Number = float.Parse(TextB1.Text);
+            TextB1.Text = "";
+            Operands = "/";
         }
 
         private void Equals_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Decimal_Click(object sender, EventArgs e)
+        {
+            Chain_Text(".");
+        }
+
+        private void TextB1_TextChanged(object sender, EventArgs e)
         {
 
         }
