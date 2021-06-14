@@ -35,7 +35,14 @@ namespace OOP_Calculator
        
         private void button_0_Click(object sender, EventArgs e)
         {
-            Chain_Text("0");
+            if (TextB1.Text == "0")
+            {
+                TextB1.Text = "0";
+            }
+            else
+            {
+                Chain_Text("0");
+            }
         }
 
         private void button_1_Click(object sender, EventArgs e)
@@ -186,7 +193,29 @@ namespace OOP_Calculator
 
         private void Equals_Click(object sender, EventArgs e)
         {
-
+            if (Operands == "+")
+            {
+                TextB1.Text = (Number + float.Parse(TextB1.Text)).ToString();
+            }
+            if (Operands == "-")
+            {
+                TextB1.Text = (Number - float.Parse(TextB1.Text)).ToString();
+            }
+            if (Operands == "*")
+            {
+                TextB1.Text = (Number * float.Parse(TextB1.Text)).ToString();
+            }
+            if (Operands == "/")
+            {
+                if (TextB1.Text=="0")
+                {
+                    TextB1.Text = "NA";
+                }
+                else
+                {
+                    TextB1.Text = (Number / float.Parse(TextB1.Text)).ToString();
+                }
+            }
         }
 
         private void Btn_Decimal_Click(object sender, EventArgs e)
