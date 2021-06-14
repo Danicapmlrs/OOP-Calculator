@@ -40,53 +40,116 @@ namespace OOP_Calculator
 
         private void button_1_Click(object sender, EventArgs e)
         {
-            Chain_Text("1");
+            if (TextB1.Text=="0")
+            {
+                TextB1.Text = "1";
+            }
+            else
+            {
+                Chain_Text("1");
+            }
         }
 
         private void button_2_Click(object sender, EventArgs e)
         {
-            Chain_Text("2");
+            if (TextB1.Text == "0")
+            {
+                TextB1.Text = "2";
+            }
+            else
+            {
+                Chain_Text("2");
+            }
         }
 
         private void button_3_Click(object sender, EventArgs e)
         {
-            Chain_Text("3");
+            if (TextB1.Text == "0")
+            {
+                TextB1.Text = "3";
+            }
+            else
+            {
+                Chain_Text("3");
+            }
         }
 
         private void button_4_Click(object sender, EventArgs e)
         {
-            Chain_Text("4");
+            if (TextB1.Text == "0")
+            {
+                TextB1.Text = "4";
+            }
+            else
+            {
+                Chain_Text("4");
+            }
         }
 
         private void button_5_Click(object sender, EventArgs e)
         {
-            Chain_Text("5");
+            if (TextB1.Text == "0")
+            {
+                TextB1.Text = "5";
+            }
+            else
+            {
+                Chain_Text("5");
+            }
         }
 
         private void button_6_Click(object sender, EventArgs e)
         {
-            Chain_Text("6");
+            if (TextB1.Text == "0")
+            {
+                TextB1.Text = "6";
+            }
+            else
+            {
+                Chain_Text("6");
+            }
         }
 
         private void button_7_Click(object sender, EventArgs e)
         {
-            Chain_Text("7");
+            if (TextB1.Text == "0")
+            {
+                TextB1.Text = "7";
+            }
+            else
+            {
+                Chain_Text("7");
+            }
         }
 
         private void button_8_Click(object sender, EventArgs e)
         {
-            Chain_Text("8");
+            if (TextB1.Text == "0")
+            {
+                TextB1.Text = "8";
+            }
+            else
+            {
+                Chain_Text("8");
+            }
         }
 
         private void button_9_Click(object sender, EventArgs e)
         {
-            Chain_Text("9");
+            if (TextB1.Text == "0")
+            {
+                TextB1.Text = "9";
+            }
+            else
+            {
+                Chain_Text("9");
+            }
         }
 
         private void Btn_Add_Click(object sender, EventArgs e)
         {
             Number = float.Parse(TextB1.Text);
-            TextB1.Text="";
+            TextB1.Text="0";
             Operands = "+";
         }
 
@@ -98,7 +161,7 @@ namespace OOP_Calculator
         private void Btn_Minus_Click(object sender, EventArgs e)
         {
             Number = float.Parse(TextB1.Text);
-            TextB1.Text = "";
+            TextB1.Text = "0";
             Operands = "-";
         }
 
@@ -110,14 +173,14 @@ namespace OOP_Calculator
         private void Btn_Multiply_Click(object sender, EventArgs e)
         {
             Number = float.Parse(TextB1.Text);
-            TextB1.Text = "";
+            TextB1.Text = "0";
             Operands = "*";
         }
 
         private void Btn_Divide_Click(object sender, EventArgs e)
         {
             Number = float.Parse(TextB1.Text);
-            TextB1.Text = "";
+            TextB1.Text = "0";
             Operands = "/";
         }
 
