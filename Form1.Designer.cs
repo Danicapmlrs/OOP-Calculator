@@ -48,13 +48,15 @@ namespace OOP_Calculator
             this.Button_0 = new System.Windows.Forms.Button();
             this.TextB1 = new System.Windows.Forms.TextBox();
             this.btnbackspace = new System.Windows.Forms.Button();
+            this.btnsqr = new System.Windows.Forms.Button();
+            this.btnsqert = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Button_7
             // 
             this.Button_7.BackColor = System.Drawing.Color.LightGreen;
             this.Button_7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Button_7.Location = new System.Drawing.Point(22, 148);
+            this.Button_7.Location = new System.Drawing.Point(22, 207);
             this.Button_7.Name = "Button_7";
             this.Button_7.Size = new System.Drawing.Size(69, 60);
             this.Button_7.TabIndex = 7;
@@ -66,7 +68,7 @@ namespace OOP_Calculator
             // 
             this.Button_9.BackColor = System.Drawing.Color.LightGreen;
             this.Button_9.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Button_9.Location = new System.Drawing.Point(172, 148);
+            this.Button_9.Location = new System.Drawing.Point(172, 207);
             this.Button_9.Name = "Button_9";
             this.Button_9.Size = new System.Drawing.Size(69, 60);
             this.Button_9.TabIndex = 9;
@@ -78,7 +80,7 @@ namespace OOP_Calculator
             // 
             this.Button_8.BackColor = System.Drawing.Color.LightGreen;
             this.Button_8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Button_8.Location = new System.Drawing.Point(97, 148);
+            this.Button_8.Location = new System.Drawing.Point(97, 207);
             this.Button_8.Name = "Button_8";
             this.Button_8.Size = new System.Drawing.Size(69, 60);
             this.Button_8.TabIndex = 8;
@@ -90,7 +92,7 @@ namespace OOP_Calculator
             // 
             this.Button_5.BackColor = System.Drawing.Color.LightGreen;
             this.Button_5.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Button_5.Location = new System.Drawing.Point(97, 214);
+            this.Button_5.Location = new System.Drawing.Point(97, 273);
             this.Button_5.Name = "Button_5";
             this.Button_5.Size = new System.Drawing.Size(69, 60);
             this.Button_5.TabIndex = 5;
@@ -102,7 +104,7 @@ namespace OOP_Calculator
             // 
             this.Button_6.BackColor = System.Drawing.Color.LightGreen;
             this.Button_6.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Button_6.Location = new System.Drawing.Point(172, 214);
+            this.Button_6.Location = new System.Drawing.Point(172, 273);
             this.Button_6.Name = "Button_6";
             this.Button_6.Size = new System.Drawing.Size(69, 60);
             this.Button_6.TabIndex = 6;
@@ -114,7 +116,7 @@ namespace OOP_Calculator
             // 
             this.Button_4.BackColor = System.Drawing.Color.LightGreen;
             this.Button_4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Button_4.Location = new System.Drawing.Point(22, 214);
+            this.Button_4.Location = new System.Drawing.Point(22, 273);
             this.Button_4.Name = "Button_4";
             this.Button_4.Size = new System.Drawing.Size(69, 60);
             this.Button_4.TabIndex = 4;
@@ -126,7 +128,7 @@ namespace OOP_Calculator
             // 
             this.Button_2.BackColor = System.Drawing.Color.LightGreen;
             this.Button_2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Button_2.Location = new System.Drawing.Point(97, 280);
+            this.Button_2.Location = new System.Drawing.Point(97, 339);
             this.Button_2.Name = "Button_2";
             this.Button_2.Size = new System.Drawing.Size(69, 60);
             this.Button_2.TabIndex = 2;
@@ -138,7 +140,7 @@ namespace OOP_Calculator
             // 
             this.Button_3.BackColor = System.Drawing.Color.LightGreen;
             this.Button_3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Button_3.Location = new System.Drawing.Point(172, 280);
+            this.Button_3.Location = new System.Drawing.Point(172, 339);
             this.Button_3.Name = "Button_3";
             this.Button_3.Size = new System.Drawing.Size(69, 60);
             this.Button_3.TabIndex = 3;
@@ -150,7 +152,7 @@ namespace OOP_Calculator
             // 
             this.Button_1.BackColor = System.Drawing.Color.LightGreen;
             this.Button_1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Button_1.Location = new System.Drawing.Point(22, 280);
+            this.Button_1.Location = new System.Drawing.Point(22, 339);
             this.Button_1.Name = "Button_1";
             this.Button_1.Size = new System.Drawing.Size(69, 60);
             this.Button_1.TabIndex = 1;
@@ -162,7 +164,7 @@ namespace OOP_Calculator
             // 
             this.Btn_Add.BackColor = System.Drawing.Color.LightSteelBlue;
             this.Btn_Add.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Btn_Add.Location = new System.Drawing.Point(247, 148);
+            this.Btn_Add.Location = new System.Drawing.Point(247, 207);
             this.Btn_Add.Name = "Btn_Add";
             this.Btn_Add.Size = new System.Drawing.Size(69, 60);
             this.Btn_Add.TabIndex = 14;
@@ -174,7 +176,7 @@ namespace OOP_Calculator
             // 
             this.Btn_Minus.BackColor = System.Drawing.Color.LightSteelBlue;
             this.Btn_Minus.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Btn_Minus.Location = new System.Drawing.Point(247, 214);
+            this.Btn_Minus.Location = new System.Drawing.Point(247, 273);
             this.Btn_Minus.Name = "Btn_Minus";
             this.Btn_Minus.Size = new System.Drawing.Size(69, 60);
             this.Btn_Minus.TabIndex = 13;
@@ -186,7 +188,7 @@ namespace OOP_Calculator
             // 
             this.Btn_Multiply.BackColor = System.Drawing.Color.LightSteelBlue;
             this.Btn_Multiply.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Btn_Multiply.Location = new System.Drawing.Point(247, 280);
+            this.Btn_Multiply.Location = new System.Drawing.Point(247, 339);
             this.Btn_Multiply.Name = "Btn_Multiply";
             this.Btn_Multiply.Size = new System.Drawing.Size(69, 60);
             this.Btn_Multiply.TabIndex = 12;
@@ -198,7 +200,7 @@ namespace OOP_Calculator
             // 
             this.Btn_Divide.BackColor = System.Drawing.Color.LightSteelBlue;
             this.Btn_Divide.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Btn_Divide.Location = new System.Drawing.Point(247, 346);
+            this.Btn_Divide.Location = new System.Drawing.Point(247, 405);
             this.Btn_Divide.Name = "Btn_Divide";
             this.Btn_Divide.Size = new System.Drawing.Size(69, 60);
             this.Btn_Divide.TabIndex = 11;
@@ -210,7 +212,7 @@ namespace OOP_Calculator
             // 
             this.Btn_Clear.BackColor = System.Drawing.Color.LightSteelBlue;
             this.Btn_Clear.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Btn_Clear.Location = new System.Drawing.Point(322, 148);
+            this.Btn_Clear.Location = new System.Drawing.Point(322, 207);
             this.Btn_Clear.Name = "Btn_Clear";
             this.Btn_Clear.Size = new System.Drawing.Size(69, 60);
             this.Btn_Clear.TabIndex = 15;
@@ -222,7 +224,7 @@ namespace OOP_Calculator
             // 
             this.Btn_Decimal.BackColor = System.Drawing.Color.Aquamarine;
             this.Btn_Decimal.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Btn_Decimal.Location = new System.Drawing.Point(172, 346);
+            this.Btn_Decimal.Location = new System.Drawing.Point(172, 405);
             this.Btn_Decimal.Name = "Btn_Decimal";
             this.Btn_Decimal.Size = new System.Drawing.Size(69, 60);
             this.Btn_Decimal.TabIndex = 10;
@@ -235,7 +237,7 @@ namespace OOP_Calculator
             this.Btn_Equals.BackColor = System.Drawing.Color.DimGray;
             this.Btn_Equals.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Btn_Equals.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_Equals.Location = new System.Drawing.Point(322, 280);
+            this.Btn_Equals.Location = new System.Drawing.Point(322, 339);
             this.Btn_Equals.Name = "Btn_Equals";
             this.Btn_Equals.Size = new System.Drawing.Size(69, 126);
             this.Btn_Equals.TabIndex = 17;
@@ -247,7 +249,7 @@ namespace OOP_Calculator
             // 
             this.Button_0.BackColor = System.Drawing.Color.LightGreen;
             this.Button_0.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Button_0.Location = new System.Drawing.Point(22, 346);
+            this.Button_0.Location = new System.Drawing.Point(22, 405);
             this.Button_0.Name = "Button_0";
             this.Button_0.Size = new System.Drawing.Size(144, 60);
             this.Button_0.TabIndex = 0;
@@ -269,7 +271,7 @@ namespace OOP_Calculator
             // 
             this.btnbackspace.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnbackspace.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnbackspace.Location = new System.Drawing.Point(322, 214);
+            this.btnbackspace.Location = new System.Drawing.Point(322, 273);
             this.btnbackspace.Name = "btnbackspace";
             this.btnbackspace.Size = new System.Drawing.Size(69, 60);
             this.btnbackspace.TabIndex = 19;
@@ -277,12 +279,38 @@ namespace OOP_Calculator
             this.btnbackspace.UseVisualStyleBackColor = false;
             this.btnbackspace.Click += new System.EventHandler(this.btnbackspace_Click);
             // 
+            // btnsqr
+            // 
+            this.btnsqr.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnsqr.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnsqr.Location = new System.Drawing.Point(247, 141);
+            this.btnsqr.Name = "btnsqr";
+            this.btnsqr.Size = new System.Drawing.Size(69, 60);
+            this.btnsqr.TabIndex = 20;
+            this.btnsqr.Text = "x^2";
+            this.btnsqr.UseVisualStyleBackColor = false;
+            this.btnsqr.Click += new System.EventHandler(this.btnsqr_Click);
+            // 
+            // btnsqert
+            // 
+            this.btnsqert.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnsqert.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnsqert.Location = new System.Drawing.Point(322, 141);
+            this.btnsqert.Name = "btnsqert";
+            this.btnsqert.Size = new System.Drawing.Size(69, 60);
+            this.btnsqert.TabIndex = 23;
+            this.btnsqert.Text = "√x";
+            this.btnsqert.UseVisualStyleBackColor = false;
+            this.btnsqert.Click += new System.EventHandler(this.btnsqert_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
-            this.ClientSize = new System.Drawing.Size(410, 450);
+            this.ClientSize = new System.Drawing.Size(410, 477);
+            this.Controls.Add(this.btnsqert);
+            this.Controls.Add(this.btnsqr);
             this.Controls.Add(this.btnbackspace);
             this.Controls.Add(this.TextB1);
             this.Controls.Add(this.Button_0);
@@ -330,6 +358,8 @@ namespace OOP_Calculator
         private System.Windows.Forms.Button Button_0;
         private System.Windows.Forms.TextBox TextB1;
         private System.Windows.Forms.Button btnbackspace;
+        private System.Windows.Forms.Button btnsqr;
+        private System.Windows.Forms.Button btnsqert;
     }
 }
 

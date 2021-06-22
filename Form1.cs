@@ -239,5 +239,15 @@ namespace OOP_Calculator
                 TextB1.Text= TextB1.Text.Remove(TextB1.Text.Length -1);
             }
         }
+
+        private void btnsqr_Click(object sender, EventArgs e)
+        {
+            TextB1.Text = Math.Pow(double.Parse(TextB1.Text), 2).ToString();
+        }
+
+        private void btnsqert_Click(object sender, EventArgs e)
+        {
+            TextB1.Text = Math.Sqrt(double.Parse(TextB1.Text)).ToString();
+        }
     }
 }
