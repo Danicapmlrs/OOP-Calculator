@@ -230,7 +230,14 @@ namespace OOP_Calculator
 
         private void btnbackspace_Click(object sender, EventArgs e)
         {
-
+            if (TextB1.Text.Length==1)
+            {
+                TextB1.Text = "0";
+            }
+            else
+            {
+                TextB1.Text= TextB1.Text.Remove(TextB1.Text.Length -1);
+            }
         }
     }
 }

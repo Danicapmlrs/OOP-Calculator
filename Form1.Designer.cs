@@ -268,12 +268,12 @@ namespace OOP_Calculator
             // btnbackspace
             // 
             this.btnbackspace.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.btnbackspace.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnbackspace.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnbackspace.Location = new System.Drawing.Point(322, 214);
             this.btnbackspace.Name = "btnbackspace";
             this.btnbackspace.Size = new System.Drawing.Size(69, 60);
             this.btnbackspace.TabIndex = 19;
-            this.btnbackspace.Text = "CE";
+            this.btnbackspace.Text = "DEL";
             this.btnbackspace.UseVisualStyleBackColor = false;
             this.btnbackspace.Click += new System.EventHandler(this.btnbackspace_Click);
             // 
