@@ -43,11 +43,11 @@ namespace OOP_Calculator
             this.Btn_Multiply = new System.Windows.Forms.Button();
             this.Btn_Divide = new System.Windows.Forms.Button();
             this.Btn_Clear = new System.Windows.Forms.Button();
-            this.Btn_Percentage = new System.Windows.Forms.Button();
             this.Btn_Decimal = new System.Windows.Forms.Button();
             this.Btn_Equals = new System.Windows.Forms.Button();
             this.Button_0 = new System.Windows.Forms.Button();
             this.TextB1 = new System.Windows.Forms.TextBox();
+            this.btnbackspace = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Button_7
@@ -218,18 +218,6 @@ namespace OOP_Calculator
             this.Btn_Clear.UseVisualStyleBackColor = false;
             this.Btn_Clear.Click += new System.EventHandler(this.Btn_Clear_Click);
             // 
-            // Btn_Percentage
-            // 
-            this.Btn_Percentage.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.Btn_Percentage.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Btn_Percentage.Location = new System.Drawing.Point(322, 214);
-            this.Btn_Percentage.Name = "Btn_Percentage";
-            this.Btn_Percentage.Size = new System.Drawing.Size(69, 60);
-            this.Btn_Percentage.TabIndex = 16;
-            this.Btn_Percentage.Text = "%";
-            this.Btn_Percentage.UseVisualStyleBackColor = false;
-            this.Btn_Percentage.Click += new System.EventHandler(this.Btn_Percentage_Click);
-            // 
             // Btn_Decimal
             // 
             this.Btn_Decimal.BackColor = System.Drawing.Color.Aquamarine;
@@ -277,17 +265,29 @@ namespace OOP_Calculator
             this.TextB1.Text = "0";
             this.TextB1.TextChanged += new System.EventHandler(this.TextB1_TextChanged);
             // 
+            // btnbackspace
+            // 
+            this.btnbackspace.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnbackspace.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnbackspace.Location = new System.Drawing.Point(322, 214);
+            this.btnbackspace.Name = "btnbackspace";
+            this.btnbackspace.Size = new System.Drawing.Size(69, 60);
+            this.btnbackspace.TabIndex = 19;
+            this.btnbackspace.Text = "CE";
+            this.btnbackspace.UseVisualStyleBackColor = false;
+            this.btnbackspace.Click += new System.EventHandler(this.btnbackspace_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(410, 450);
+            this.Controls.Add(this.btnbackspace);
             this.Controls.Add(this.TextB1);
             this.Controls.Add(this.Button_0);
             this.Controls.Add(this.Btn_Equals);
             this.Controls.Add(this.Btn_Decimal);
-            this.Controls.Add(this.Btn_Percentage);
             this.Controls.Add(this.Btn_Clear);
             this.Controls.Add(this.Btn_Divide);
             this.Controls.Add(this.Btn_Multiply);
@@ -325,11 +325,11 @@ namespace OOP_Calculator
         private System.Windows.Forms.Button Btn_Multiply;
         private System.Windows.Forms.Button Btn_Divide;
         private System.Windows.Forms.Button Btn_Clear;
-        private System.Windows.Forms.Button Btn_Percentage;
         private System.Windows.Forms.Button Btn_Decimal;
         private System.Windows.Forms.Button Btn_Equals;
         private System.Windows.Forms.Button Button_0;
         private System.Windows.Forms.TextBox TextB1;
+        private System.Windows.Forms.Button btnbackspace;
     }
 }
 
