@@ -29,6 +29,7 @@ namespace OOP_Calculator
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Button_7 = new System.Windows.Forms.Button();
             this.Button_9 = new System.Windows.Forms.Button();
             this.Button_8 = new System.Windows.Forms.Button();
@@ -50,6 +51,8 @@ namespace OOP_Calculator
             this.btnbackspace = new System.Windows.Forms.Button();
             this.btnsqr = new System.Windows.Forms.Button();
             this.btnsqert = new System.Windows.Forms.Button();
+            this.btnpi = new System.Windows.Forms.Button();
+            this.btncube = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Button_7
@@ -283,7 +286,7 @@ namespace OOP_Calculator
             // 
             this.btnsqr.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnsqr.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnsqr.Location = new System.Drawing.Point(247, 141);
+            this.btnsqr.Location = new System.Drawing.Point(172, 141);
             this.btnsqr.Name = "btnsqr";
             this.btnsqr.Size = new System.Drawing.Size(69, 60);
             this.btnsqr.TabIndex = 20;
@@ -303,12 +306,38 @@ namespace OOP_Calculator
             this.btnsqert.UseVisualStyleBackColor = false;
             this.btnsqert.Click += new System.EventHandler(this.btnsqert_Click);
             // 
+            // btnpi
+            // 
+            this.btnpi.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnpi.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnpi.Location = new System.Drawing.Point(97, 141);
+            this.btnpi.Name = "btnpi";
+            this.btnpi.Size = new System.Drawing.Size(69, 60);
+            this.btnpi.TabIndex = 24;
+            this.btnpi.Text = "π";
+            this.btnpi.UseVisualStyleBackColor = false;
+            this.btnpi.Click += new System.EventHandler(this.btnpi_Click);
+            // 
+            // btncube
+            // 
+            this.btncube.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btncube.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btncube.Location = new System.Drawing.Point(247, 141);
+            this.btncube.Name = "btncube";
+            this.btncube.Size = new System.Drawing.Size(69, 60);
+            this.btncube.TabIndex = 25;
+            this.btncube.Text = "x^3";
+            this.btncube.UseVisualStyleBackColor = false;
+            this.btncube.Click += new System.EventHandler(this.btncube_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(410, 477);
+            this.Controls.Add(this.btncube);
+            this.Controls.Add(this.btnpi);
             this.Controls.Add(this.btnsqert);
             this.Controls.Add(this.btnsqr);
             this.Controls.Add(this.btnbackspace);
@@ -330,6 +359,7 @@ namespace OOP_Calculator
             this.Controls.Add(this.Button_8);
             this.Controls.Add(this.Button_9);
             this.Controls.Add(this.Button_7);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Calculator";
@@ -360,6 +390,8 @@ namespace OOP_Calculator
         private System.Windows.Forms.Button btnbackspace;
         private System.Windows.Forms.Button btnsqr;
         private System.Windows.Forms.Button btnsqert;
+        private System.Windows.Forms.Button btnpi;
+        private System.Windows.Forms.Button btncube;
     }
 }
 

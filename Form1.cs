@@ -249,5 +249,15 @@ namespace OOP_Calculator
         {
             TextB1.Text = Math.Sqrt(double.Parse(TextB1.Text)).ToString();
         }
+
+        private void btnpi_Click(object sender, EventArgs e)
+        {
+            TextB1.Text = (double.Parse(TextB1.Text) * Math.PI).ToString();
+        }
+
+        private void btncube_Click(object sender, EventArgs e)
+        {
+            TextB1.Text = Math.Pow(double.Parse(TextB1.Text), 3).ToString();
+        }
     }
 }
