@@ -252,12 +252,17 @@ namespace OOP_Calculator
 
         private void btnpi_Click(object sender, EventArgs e)
         {
-            TextB1.Text = (double.Parse(TextB1.Text) * Math.PI).ToString();
+            TextB1.Text = Math.PI.ToString();
         }
 
         private void btncube_Click(object sender, EventArgs e)
         {
             TextB1.Text = Math.Pow(double.Parse(TextB1.Text), 3).ToString();
+        }
+
+        private void btne_Click(object sender, EventArgs e)
+        {
+            TextB1.Text = Math.Exp(1).ToString();
         }
     }
 }

@@ -53,6 +53,7 @@ namespace OOP_Calculator
             this.btnsqert = new System.Windows.Forms.Button();
             this.btnpi = new System.Windows.Forms.Button();
             this.btncube = new System.Windows.Forms.Button();
+            this.btne = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Button_7
@@ -330,12 +331,25 @@ namespace OOP_Calculator
             this.btncube.UseVisualStyleBackColor = false;
             this.btncube.Click += new System.EventHandler(this.btncube_Click);
             // 
+            // btne
+            // 
+            this.btne.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btne.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btne.Location = new System.Drawing.Point(22, 141);
+            this.btne.Name = "btne";
+            this.btne.Size = new System.Drawing.Size(69, 60);
+            this.btne.TabIndex = 26;
+            this.btne.Text = "e";
+            this.btne.UseVisualStyleBackColor = false;
+            this.btne.Click += new System.EventHandler(this.btne_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PeachPuff;
             this.ClientSize = new System.Drawing.Size(410, 477);
+            this.Controls.Add(this.btne);
             this.Controls.Add(this.btncube);
             this.Controls.Add(this.btnpi);
             this.Controls.Add(this.btnsqert);
@@ -392,6 +406,7 @@ namespace OOP_Calculator
         private System.Windows.Forms.Button btnsqert;
         private System.Windows.Forms.Button btnpi;
         private System.Windows.Forms.Button btncube;
+        private System.Windows.Forms.Button btne;
     }
 }
 
