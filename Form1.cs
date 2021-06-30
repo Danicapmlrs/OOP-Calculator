@@ -17,9 +17,9 @@ namespace OOP_Calculator
             InitializeComponent();
         }
 
-        public float Number = 0;
+        private float Number = 0;
 
-        public string Operands;
+        private CalcOOP calcOperators=new CalcOOP();
 
         private void Chain_Text(string calc_text)
         {
@@ -157,7 +157,7 @@ namespace OOP_Calculator
         {
             Number = float.Parse(TextB1.Text);
             TextB1.Text="0";
-            Operands = "+";
+            calcOperators.setasAdd();
         }
 
         private void Btn_Clear_Click(object sender, EventArgs e)
@@ -169,7 +169,7 @@ namespace OOP_Calculator
         {
             Number = float.Parse(TextB1.Text);
             TextB1.Text = "0";
-            Operands = "-";
+            calcOperators.setasMinus();
         }
 
         private void Btn_Percentage_Click(object sender, EventArgs e)
@@ -181,31 +181,31 @@ namespace OOP_Calculator
         {
             Number = float.Parse(TextB1.Text);
             TextB1.Text = "0";
-            Operands = "*";
+            calcOperators.setasMultiply();
         }
 
         private void Btn_Divide_Click(object sender, EventArgs e)
         {
             Number = float.Parse(TextB1.Text);
             TextB1.Text = "0";
-            Operands = "/";
+            calcOperators.setasDivide();
         }
 
         private void Equals_Click(object sender, EventArgs e)
         {
-            if (Operands == "+")
+            if (calcOperators.getOperand()== "+")
             {
                 TextB1.Text = (Number + float.Parse(TextB1.Text)).ToString();
             }
-            if (Operands == "-")
+            if (calcOperators.getOperand() == "-")
             {
                 TextB1.Text = (Number - float.Parse(TextB1.Text)).ToString();
             }
-            if (Operands == "*")
+            if (calcOperators.getOperand() == "*")
             {
                 TextB1.Text = (Number * float.Parse(TextB1.Text)).ToString();
             }
-            if (Operands == "/")
+            if (calcOperators.getOperand() == "/")
             {
                 if (TextB1.Text=="0")
                 {
