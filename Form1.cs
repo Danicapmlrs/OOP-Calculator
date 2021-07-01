@@ -172,11 +172,6 @@ namespace OOP_Calculator
             Operands = "-";
         }
 
-        private void Btn_Percentage_Click(object sender, EventArgs e)
-        {
-            Chain_Text("%");
-        }
-
         private void Btn_Multiply_Click(object sender, EventArgs e)
         {
             Number = float.Parse(TextB1.Text);
