@@ -226,7 +226,7 @@ namespace OOP_Calculator
             }
             else
             {
-                TextB1.Text= TextB1.Text.Remove(TextB1.Text.Length -1);
+                TextB1.Text= TextB1.Text.Remove(TextB1.Text.Length - 1);
             }
         }
 
