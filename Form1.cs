@@ -218,11 +218,6 @@ namespace OOP_Calculator
             Chain_Text(".");
         }
 
-        private void TextB1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnbackspace_Click(object sender, EventArgs e)
         {
             if (TextB1.Text.Length==1)
