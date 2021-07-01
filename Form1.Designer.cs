@@ -269,7 +269,6 @@ namespace OOP_Calculator
             this.TextB1.Size = new System.Drawing.Size(369, 87);
             this.TextB1.TabIndex = 18;
             this.TextB1.Text = "0";
-            this.TextB1.TextChanged += new System.EventHandler(this.TextB1_TextChanged);
             // 
             // btnbackspace
             // 
