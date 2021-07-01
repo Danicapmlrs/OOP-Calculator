@@ -172,11 +172,6 @@ namespace OOP_Calculator
             calcOperators.setasMinus();
         }
 
-        private void Btn_Percentage_Click(object sender, EventArgs e)
-        {
-            Chain_Text("%");
-        }
-
         private void Btn_Multiply_Click(object sender, EventArgs e)
         {
             Number = float.Parse(TextB1.Text);
@@ -223,11 +218,6 @@ namespace OOP_Calculator
             Chain_Text(".");
         }
 
-        private void TextB1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnbackspace_Click(object sender, EventArgs e)
         {
             if (TextB1.Text.Length==1)
@@ -236,7 +226,7 @@ namespace OOP_Calculator
             }
             else
             {
-                TextB1.Text= TextB1.Text.Remove(TextB1.Text.Length -1);
+                TextB1.Text= TextB1.Text.Remove(TextB1.Text.Length - 1);
             }
         }
 
